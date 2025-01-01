@@ -1,4 +1,4 @@
-/* Modern reset and base styles */
+/* Modern reset and base styles 
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   line-height: 1.7;
 }
 
-/* Container styles */
+/* Container styles 
 .container, .login-container, .register-container, .post-job-container {
   max-width: 1200px;
   margin: 3rem auto;
@@ -32,7 +32,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* Glass morphism forms */
+/* Glass morphism forms 
 form {
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
-/* Modern button styles */
+/* Modern button styles 
 .button {
   background: var(--primary);
   color: white;
@@ -87,7 +87,7 @@ input:focus, select:focus, textarea:focus {
   background: #dc2626;
 }
 
-/* Modern job cards */
+/* Modern job cards 
 .job-list {
   display: grid;
   gap: 2rem;
@@ -126,7 +126,7 @@ input:focus, select:focus, textarea:focus {
   transform: scaleX(1);
 }
 
-/* Message styling */
+/* Message styling 
 .success, .error {
   padding: 1.2rem;
   border-radius: 12px;
@@ -160,7 +160,7 @@ input:focus, select:focus, textarea:focus {
   content: '!';
 }
 
-/* Modern header */
+/* Modern header 
 header {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
@@ -200,7 +200,7 @@ nav a:hover::after {
   transform: scaleX(1);
 }
 
-/* Typography */
+/* Typography 
 h1, h2, h3 {
   font-weight: 700;
   line-height: 1.2;
@@ -214,7 +214,7 @@ h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 1.8rem; }
 
-/* Responsive design */
+/* Responsive design 
 @media (max-width: 768px) {
   .container, .login-container, .register-container, .post-job-container {
       margin: 1.5rem;
