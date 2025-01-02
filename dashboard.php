@@ -9,6 +9,13 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 require_once 'includes/db.php'; // Include the database connection
+if ($_SESSION['role'] == 'employer') {
+    header('Location: manage-jobs.php');
+    exit;
+} elseif ($_SESSION['role'] == 'job_seeker') {
+    header('Location: browse-jobs.php');
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +35,13 @@ require_once 'includes/db.php'; // Include the database connection
         <!-- Display user-specific content -->
         <?php if ($_SESSION['role'] == 'employer'): ?>
             <a href="post-job.php" class="button">Post a New Job</a>
-            <a href="manage-jobs.php" class="button">Manage Jobs</a>  <!-- Link to post a job -->
+            <a href="manage-jobs.php" class="button">Manage Jobs</a>
+             <!-- Link to post a job -->
         <?php endif; ?>
 
         <?php if ($_SESSION['role'] == 'job_seeker'): ?>
-            <a href="browse-jobs.php" class="button">Browse Jobs</a> 
+            <a href="browse-jobs.php" class="button">Browse Jobs</a>
+            
              <!-- Link to browse and apply for jobs -->
         <?php endif; ?>
 
